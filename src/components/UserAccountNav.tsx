@@ -8,6 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { LogOut } from "lucide-react";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
 import Image from "next/image";
@@ -48,7 +49,10 @@ const UserAccountNav = ({ user }: Props) => {
             signOut().catch(console.error);
           }}
           className="text-red-600 cursor-pointer"
-        ></DropdownMenuItem>
+        >
+          Ragequit
+          <LogOut className="w-4 h-4 ml-2" />
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

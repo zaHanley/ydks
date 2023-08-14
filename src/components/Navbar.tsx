@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import SignInButton from "./SignInButton";
 import UserAccountNav from "./UserAccountNav";
+import { ModeToggle } from "./theme-toggle";
 
 type Props = {};
 
@@ -18,6 +19,7 @@ const Navbar = async (props: Props) => {
           </p>
         </Link>
         <div className="flex items-center">
+          <ModeToggle className="mr-3" />
           {session?.user ? (
             <UserAccountNav user={session.user} />
           ) : (
