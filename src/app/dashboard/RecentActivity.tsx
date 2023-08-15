@@ -1,5 +1,6 @@
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -15,6 +16,7 @@ const RecentActivity = (props: Props) => {
         <CardTitle className="text-xl font-bold">Recent Activities</CardTitle>
         <CardDescription>You have played a total of 69 games</CardDescription>
       </CardHeader>
+      <CardContent>History</CardContent>
     </Card>
   );
 };
