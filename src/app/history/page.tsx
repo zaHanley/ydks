@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const HistoryPage = (props: Props) => {
-  return <HotTopicsCard />;
+  return <div>History Page</div>;
 };
 
 export default HistoryPage;

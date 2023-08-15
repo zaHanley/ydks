@@ -22,7 +22,7 @@ const WordCloud = (props: Props) => {
   return (
     <>
       <D3WordCloud
-        height={550}
+        height={350}
         rotate={0}
         padding={10}
         fontSize={fontSizeMapper}

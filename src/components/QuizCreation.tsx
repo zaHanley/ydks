@@ -38,7 +38,7 @@ const QuizCreation = (props: Props) => {
 
     resolver: zodResolver(quizCreationSchema),
     defaultValues: {
-      amount: 3,
+      amount: 1,
       topic: "",
       type: "open_ended",
     },
@@ -69,9 +69,6 @@ const QuizCreation = (props: Props) => {
                     <FormControl>
                       <Input placeholder="What do you know?" {...field} />
                     </FormControl>
-                    <FormDescription>
-                      This is your public display name.
-                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
